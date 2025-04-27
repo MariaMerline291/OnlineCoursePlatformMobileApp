@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/my_courses_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="My Courses"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <!-- ListView -->
+
+    <ListView
+        android:id="@+id/my_courses_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@id/my_courses_title"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Progress Text (Optional) -->
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_courses_list"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textColor="#333333"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- Bottom Navigation Bar (Fixed at Bottom) -->
+
+    <LinearLayout
+    android:id="@+id/bottom_nav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#008080"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/focus_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/eye"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/home"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/setting"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/learning_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_learning"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".HomeActivity"
+    tools:ignore="ContentDescription" >
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4DB6AC"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="App Logo"
+            android:padding="5dp"
+            android:src="@drawable/onlinecourse"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background"
+            android:hint="Search courses..."
+            android:padding="5dp"
+            tools:ignore="HardcodedText" />
+
+        
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:contentDescription="Cart Icon"
+            android:padding="5dp"
+            android:src="@drawable/cart"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <!-- Welcome Message -->
+
+   <TextView
+       android:id="@+id/welcome_textview"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:padding="10dp"
+       android:text="Welcome to Online Courses!"
+       android:textColor="#000000"
+       android:textSize="18sp"
+       android:textStyle="bold"
+       tools:ignore="HardcodedText" />
+
+    <!-- Scrollable Course Sections -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- Section 1: Popular Courses -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Popular Courses"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+             <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+            
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:padding="5dp"
+                android:rowCount="3"
+                tools:ignore="ScrollViewSize" >
+
+                <!-- Course 1 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/code"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Java Basics"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <!-- Course 2 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mobile"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Python Mastery"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <!-- Course 3 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/code"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Web Development"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <!-- Course 4 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course4"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mobile"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="AI and ML"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <!-- Course 5 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course5"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/code"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cyber Security"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <!-- Course 6 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course6"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mobile"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Android Development"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+                
+                
+                 <!-- Course 7 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/code"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Cloud Computing"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+                
+                 <!-- Course 8 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course8"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/mobile"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Blockchain"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+                
+                 <!-- Course 9 -->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/course9"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/code"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Data Science"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+                
+            </GridLayout>
+            
+                    </HorizontalScrollView>
+            
+        </LinearLayout>
+    </ScrollView>
+    
+     <!-- Bottom Navigation Bar -->
+
+   <LinearLayout
+       android:id="@+id/bottom_nav"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="#008080"
+       android:gravity="center"
+       android:orientation="horizontal"
+       android:padding="10dp"
+       tools:ignore="ObsoleteLayoutParam" >
+
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/focus_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/eye"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/home"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/favorite_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/setting"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/learning_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_learning"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:maxHeight="40dp"
+        android:maxWidth="40dp"
+        tools:ignore="ContentDescription" />
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+

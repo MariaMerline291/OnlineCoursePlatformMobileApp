@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#E0F7FA"  
+    tools:context=".SplashScreen">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/getstarted"
+        tools:ignore="ContentDescription" />
+
+    <!-- Welcome Text -->
+   <TextView
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome to Courses"
+    android:textColor="#004D40"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    android:fontFamily="sans-serif-medium"
+    android:layout_marginBottom="10dp"
+    android:singleLine="true"
+    android:ellipsize="end"
+    tools:ignore="HardcodedText" />
+
+
+    <!-- Subtext -->
+    <TextView
+        android:id="@+id/subtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn. Grow. Succeed."
+        android:textColor="#00695C"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginBottom="40dp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Get Started Button -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="#008080"
+        android:text="Get Started"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

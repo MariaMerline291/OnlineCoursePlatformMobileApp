@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/certificate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/certificate_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp" >
+
+    <TextView
+        android:id="@+id/certificate_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Certificate of Completion"
+        android:textColor="#3E2723"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="24dp"
+        android:background="#BCAAA4" />
+
+    <TextView
+        android:id="@+id/certificate_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="#4DB6AC"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="This certifies that..."
+        android:textAlignment="center"
+        android:textColor="#4E342E"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/certificate_footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Online Course Project\nInstructor Signature"
+        android:textAlignment="center"
+        android:textColor="#6D4C41"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

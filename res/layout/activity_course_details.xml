@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <ImageView
+        android:id="@+id/course_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/code"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/course_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Course Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/course_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Course Description"
+        tools:ignore="HardcodedText" />
+    
+     <TextView
+        android:id="@+id/course_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Price: ₹500"
+        android:textColor="#FF5722"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+     <Button
+         android:id="@+id/enroll_button"
+         android:layout_width="231dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:background="#4DB6AC"
+         android:padding="10dp"
+         android:text="Enroll Now"
+         android:textColor="#FFFFFF"
+         tools:ignore="HardcodedText" />
+    
+     
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/course_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Title"
+        android:textColor="#004D40"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/course_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Progress: 0%"
+        android:textColor="#546E7A"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_course_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="#00796B"
+            android:fontFamily="sans-serif"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,ButtonStyle" />
+
+        <Button
+            android:id="@+id/view_certificate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="#0288D1"
+            android:fontFamily="sans-serif"
+            android:text="Certificate"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,ButtonStyle" />
+
+        <Button
+            android:id="@+id/rate_course_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F57C00"
+            android:fontFamily="sans-serif"
+            android:text="Rate"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="HardcodedText,ButtonStyle" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.onlinecourseproject"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash Screen Activity (Set as Launcher) -->
+        <activity 
+            android:name=".SplashScreen"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main Activity (Remove intent-filter) -->
+        <activity android:name=".MainActivity"/>
+
+        <!-- Login Activity -->
+        <activity android:name=".LoginActivity"
+            android:label="Login"
+            android:theme="@style/AppTheme"/>
+
+        <!-- Registration Activity -->
+        <activity android:name=".RegisterActivity"
+            android:label="Register"
+            android:theme="@style/AppTheme"/>
+        
+<activity android:name=".HomeActivity" />
+<activity android:name=".CourseDetailsActivity"/>
+<activity android:name=".SearchActivity"/>
+<activity android:name=".CartActivity"/>
+<activity android:name=".ProfileActivity"/>
+<activity android:name=".FavoritesActivity"/>
+<activity android:name=".MyLearningActivity"/>
+<activity android:name=".CheckoutActivity"/>
+<activity android:name=".PaymentActivity"/>
+<activity android:name=".CourseProgressActivity"/>
+<activity android:name=".CourseContentActivity"/>
+<activity android:name=".CategoryActivity"/>
+<activity android:name=".CertificateActivity"/>
+
+<activity android:name=".NotesActivity"/>
+
+<activity android:name=".FocusChallengeActivity" />
+
+
+
+        
+
+    </application>
+
+</manifest>

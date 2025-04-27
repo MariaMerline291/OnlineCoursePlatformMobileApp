@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" 
+    tools:context=".SplashScreen">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:contentDescription="App Logo"
+        android:scaleType="fitCenter"
+        android:src="@drawable/onlinecourse"
+        tools:ignore="HardcodedText" />
+
+    <!-- Welcome Message with Fade-in Animation -->
+    <TextView
+    android:id="@+id/welcomeText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/logo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Welcome to Tech Courses Online"
+    android:textColor="#00796B"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:alpha="0" 
+    tools:ignore="HardcodedText" />
+
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcomeText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:indeterminate="true" />
+
+</RelativeLayout>
